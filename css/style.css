@@ -87,7 +87,7 @@ nav a:hover {
 
     position: relative;
 
-    height: 100vh;
+    height: auto;
 
     overflow: hidden;
 
@@ -109,6 +109,10 @@ nav a:hover {
     background-size: 400% 400%;
 
     animation: backgroundGlow 15s ease infinite;
+
+    min-height: 100vh;
+
+    box-sizing: border-box;
 
 }
 
@@ -142,7 +146,7 @@ nav a:hover {
 
     margin-bottom: 50px;
 
-    padding-top: 20px;
+    padding-top: 30px;
 
 }
 
@@ -189,6 +193,8 @@ nav a:hover {
     color: #ddd;
 
     margin: 40px 0;
+
+    max-width: 90%;
 
 }
 
@@ -866,7 +872,7 @@ button:hover {
 
     font-family: 'Allura', cursive;
 
-    font-size: 88px;
+    font-size: clamp(48px, 13vw, 80px);
 
     color: #e4c15b;
 
