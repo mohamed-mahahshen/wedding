@@ -1,255 +1,259 @@
 /* Reset */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Smooth scrolling */
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
 /* Body */
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#111;
-    color:white;
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #111;
+    color: white;
 }
 
 /* Navigation */
-nav{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    padding:20px 60px;
+    padding: 20px 60px;
 
-    background:rgba(0,0,0,.6);
-    backdrop-filter:blur(10px);
+    background: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(10px);
 
-    z-index:1000;
+    z-index: 1000;
 }
 
 /* Logo */
-nav h2{
-    color:#d4af37;
-    font-size:30px;
+nav h2 {
+    color: #d4af37;
+    font-size: 30px;
 }
 
 /* Menu */
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:35px;
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
 }
 
 /* Links */
-nav a{
-    color:white;
-    text-decoration:none;
-    transition:.3s;
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
 }
 
 /* Hover */
-nav a:hover{
-    color:#d4af37;
+nav a:hover {
+    color: #d4af37;
 }
 
 /* ================= HERO ================= */
 
-.hero::before{
+.hero::before {
 
-    content:"";
+    content: "";
 
-    position:absolute;
+    position: absolute;
 
-    width:700px;
+    width: 700px;
 
-    height:700px;
+    height: 700px;
 
-    border-radius:50%;
+    border-radius: 50%;
 
-    background:rgba(212,175,55,.08);
+    background: rgba(212, 175, 55, .08);
 
-    filter:blur(120px);
+    filter: blur(120px);
 
-    animation:pulse 5s infinite;
+    animation: pulse 5s infinite;
 
 }
 
-.hero{
+.hero {
 
-    position:relative;
+    position: relative;
 
-    height:100vh;
+    height: 100vh;
 
-    overflow:hidden;
+    overflow: hidden;
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    align-items:center;
+    align-items: center;
 
-    text-align:center;
+    text-align: center;
 
-    background:linear-gradient(
+    background: linear-gradient(
             -45deg,
             #111,
             #1d1b16,
             #282111,
             #111);
 
-    background-size:400% 400%;
+    background-size: 400% 400%;
 
-    animation:backgroundGlow 15s ease infinite;
-
-}
-
-.overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    background:rgba(0,0,0,.35);
+    animation: backgroundGlow 15s ease infinite;
 
 }
 
-.hero-content{
+.overlay {
 
-    position:relative;
+    position: absolute;
 
-    z-index:10;
+    inset: 0;
 
-    width:800px;
-
-}
-
-.arabic{
-
-    font-size:70px;
-
-    color:#d4af37;
-
-    margin-bottom:30px;
+    background: rgba(0, 0, 0, .35);
 
 }
 
-.subtitle{
+.hero-content {
 
-    letter-spacing:5px;
+    position: relative;
 
-    color:#ddd;
+    z-index: 10;
 
-    margin-bottom:20px;
+    width: 800px;
 
-}
-
-.hero h1{
-
-    font-family:'Great Vibes',cursive;
-
-    font-size:72px;
-
-    color:#d4af37;
-
-    font-weight:400;
+    padding-top: 120px;
 
 }
 
-.heart{
+.arabic {
 
-    font-size:40px;
+    font-size: 70px;
 
-    margin:25px;
+    color: #d4af37;
 
-}
-
-.description{
-
-    font-size:20px;
-
-    line-height:1.8;
-
-    color:#ddd;
-
-    margin:40px 0;
+    margin-bottom: 30px;
 
 }
 
-button{
+.subtitle {
 
-    background:linear-gradient(
+    letter-spacing: 5px;
+
+    color: #ddd;
+
+    margin-bottom: 20px;
+
+}
+
+.hero h1 {
+
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 72px;
+
+    color: #d4af37;
+
+    font-weight: 400;
+
+}
+
+.heart {
+
+    font-size: 42px;
+
+    color: #d4af37;
+
+    margin: 18px 0;
+
+    animation: pulse 2s infinite;
+
+}
+
+.description {
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    color: #ddd;
+
+    margin: 40px 0;
+
+}
+
+button {
+
+    background: linear-gradient(
             45deg,
             #b8860b,
             #d4af37,
             #f2d675
     );
 
-    box-shadow:0 0 20px rgba(212,175,55,.4);
+    box-shadow: 0 0 20px rgba(212, 175, 55, .4);
 
-    color:black;
+    color: black;
 
-    border:none;
+    border: none;
 
-    padding:18px 45px;
+    padding: 18px 45px;
 
-    border-radius:50px;
+    border-radius: 50px;
 
-    cursor:pointer;
+    cursor: pointer;
 
-    font-size:18px;
+    font-size: 18px;
 
-    transition:.3s;
-
-}
-
-
-
-button:hover{
-
-    transform:translateY(-3px) scale(1.05);
-
-    box-shadow:
-            0 0 40px rgba(212,175,55,.7);
+    transition: .3s;
 
 }
 
-@keyframes backgroundGlow{
 
-    0%{
-        background-position:0% 50%;
+button:hover {
+
+    transform: translateY(-3px) scale(1.05);
+
+    box-shadow: 0 0 40px rgba(212, 175, 55, .7);
+
+}
+
+@keyframes backgroundGlow {
+
+    0% {
+        background-position: 0% 50%;
     }
 
-    50%{
-        background-position:100% 50%;
+    50% {
+        background-position: 100% 50%;
     }
 
-    100%{
-        background-position:0% 50%;
+    100% {
+        background-position: 0% 50%;
     }
 
 }
 
-@keyframes pulse{
+@keyframes pulse {
 
-    0%{
-        transform:scale(.9);
+    0% {
+        transform: scale(.9);
     }
 
-    50%{
-        transform:scale(1.1);
+    50% {
+        transform: scale(1.1);
     }
 
-    100%{
-        transform:scale(.9);
+    100% {
+        transform: scale(.9);
     }
 
 }
@@ -258,45 +262,44 @@ button:hover{
    PARTICLES
 =========================== */
 
-#particle-container{
-    position:absolute;
-    inset:0;
-    overflow:hidden;
-    z-index:2;
+#particle-container {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 2;
 }
 
-.particle{
+.particle {
 
-    position:absolute;
+    position: absolute;
 
-    width:6px;
-    height:6px;
+    width: 6px;
+    height: 6px;
 
-    border-radius:50%;
+    border-radius: 50%;
 
-    background:#d4af37;
+    background: #d4af37;
 
-    box-shadow:
-            0 0 8px #d4af37,
-            0 0 18px #d4af37;
+    box-shadow: 0 0 8px #d4af37,
+    0 0 18px #d4af37;
 
-    animation:floatUp linear forwards;
+    animation: floatUp linear forwards;
 }
 
-@keyframes floatUp{
+@keyframes floatUp {
 
-    from{
+    from {
 
-        transform:translateY(0);
+        transform: translateY(0);
 
-        opacity:1;
+        opacity: 1;
     }
 
-    to{
+    to {
 
-        transform:translateY(-110vh);
+        transform: translateY(-110vh);
 
-        opacity:0;
+        opacity: 0;
     }
 
 }
@@ -305,100 +308,670 @@ button:hover{
         PETALS
 =========================== */
 
-.petal{
+.petal {
 
-    position:absolute;
+    position: absolute;
 
-    top:-50px;
+    top: -50px;
 
-    animation-name:fall;
+    animation-name: fall;
 
-    animation-timing-function:linear;
+    animation-timing-function: linear;
 
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
 
-    pointer-events:none;
+    pointer-events: none;
 
-    z-index:4;
+    z-index: 4;
 
-    filter:
-
-            drop-shadow(0 0 10px gold);
+    filter: drop-shadow(0 0 10px gold);
 
 }
 
-.petal img{
+.petal img {
 
-    width:30px;
+    width: 30px;
 
-    opacity:.85;
+    opacity: .85;
 
-    filter:
-            drop-shadow(0 0 8px gold);
+    filter: drop-shadow(0 0 8px gold);
 
 }
 
-@keyframes fall{
+@keyframes fall {
 
-    0%{
+    0% {
 
-        transform:
-                translateX(0px)
-                rotate(0deg);
+        transform: translateX(0px) rotate(0deg);
 
-        opacity:1;
+        opacity: 1;
     }
 
-    25%{
+    25% {
 
-        transform:
-                translateX(-30px)
-                rotate(90deg);
+        transform: translateX(-30px) rotate(90deg);
 
     }
 
-    50%{
+    50% {
 
-        transform:
-                translateX(30px)
-                rotate(180deg);
+        transform: translateX(30px) rotate(180deg);
 
     }
 
-    75%{
+    75% {
 
-        transform:
-                translateX(-20px)
-                rotate(270deg);
+        transform: translateX(-20px) rotate(270deg);
 
     }
 
-    100%{
+    100% {
 
-        transform:
-                translateY(110vh)
-                translateX(20px)
-                rotate(360deg);
+        transform: translateY(110vh) translateX(20px) rotate(360deg);
 
-        opacity:0;
+        opacity: 0;
 
     }
 
 }
 
-.glass-card{
+.glass-card {
 
-    background:rgba(255,255,255,.05);
+    background: rgba(255, 255, 255, .05);
 
-    border:1px solid rgba(255,255,255,.12);
+    border: 1px solid rgba(255, 255, 255, .12);
 
-    backdrop-filter:blur(14px);
+    backdrop-filter: blur(14px);
 
-    border-radius:25px;
+    border-radius: 25px;
 
-    padding:70px;
+    padding: 70px;
 
-    box-shadow:
-            0 0 40px rgba(212,175,55,.12);
+    box-shadow: 0 0 40px rgba(212, 175, 55, .12);
+
+}
+
+/* ===========================
+   Invitation Section
+=========================== */
+
+.invitation-section {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 120px 20px;
+
+}
+
+.invitation-card {
+
+    width: 900px;
+
+    max-width: 95%;
+
+}
+
+.invitation-card h2 {
+
+    text-align: center;
+
+    font-family: 'Cinzel', serif;
+
+    color: #d4af37;
+
+    font-size: 54px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 70px;
+
+}
+
+.person-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.person {
+    width: 100%;
+    max-width: 450px;
+    gap: 100px;
+}
+
+.person h3 {
+
+    color: #d4af37;
+
+    margin-bottom: 20px;
+
+}
+
+.person p {
+
+    margin: 4px 0;
+
+    font-size: 21px;
+
+    line-height: 1.7;
+
+    color: #ececec;
+
+}
+
+.divider-heart {
+
+    font-size: 55px;
+
+    color: #d8b65c;
+
+    align-self: center;
+
+    animation: heartbeat 1s infinite;
+
+}
+
+.gold-divider {
+
+    width: 80%;
+
+    height: 1px;
+
+    margin: 60px auto;
+
+    background: linear-gradient(
+            to right,
+            transparent,
+            #d4af37,
+            transparent
+    );
+
+}
+
+.event-details {
+
+    margin-top: 70px;
+
+    display: grid;
+
+    gap: 30px;
+
+}
+
+.detail-box {
+
+    text-align: center;
+
+    padding: 35px;
+
+    background: rgba(255, 255, 255, .05);
+
+    border-radius: 20px;
+
+    transition: .4s;
+
+}
+
+.detail-box:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 0 25px rgba(212, 175, 55, .18);
+
+}
+
+.detail-box h4 {
+
+    color: #d4af37;
+
+    font-size: 24px;
+
+    margin-bottom: 18px;
+
+}
+
+.detail-box p {
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+}
+
+.person-title {
+
+    color: #d4af37;
+
+    font-size: 22px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+
+}
+
+.person-name {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 58px;
+
+    font-weight: 500;
+
+    letter-spacing: 4px;
+
+    line-height: 1.1;
+
+    color: #d8b65c;
+
+    margin-bottom: 22px;
+
+    white-space: nowrap;
+
+    text-transform: uppercase;
+
+}
+
+.gold-divider {
+
+    border: none;
+
+    height: 1px;
+
+    background: linear-gradient(
+            to right,
+            transparent,
+            #d4af37,
+            transparent);
+
+    margin: 60px 0;
+
+}
+
+.map-btn {
+
+    margin-top: 20px;
+
+}
+
+.section-subtitle {
+
+    text-align: center;
+
+    color: #bbbbbb;
+
+    margin-top: -35px;
+
+    margin-bottom: 60px;
+
+    font-size: 18px;
+
+    font-style: italic;
+
+}
+
+
+/* ===========================
+        Dua Section
+=========================== */
+
+.dua-section {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 120px 20px;
+
+}
+
+.dua-card {
+
+    max-width: 850px;
+
+    width: 100%;
+
+    text-align: center;
+
+}
+
+.dua-card h2 {
+
+    font-family: 'Cinzel', serif;
+
+    color: #d4af37;
+
+    font-size: 52px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+
+}
+
+.bismillah {
+
+    /*font-family:'Amiri', serif;*/
+
+    font-size: 70px;
+
+    color: #d4af37;
+
+    margin: 20px 0 45px;
+
+}
+
+.arabic-dua {
+
+    font-family: 'Amiri', serif;
+
+    font-size: 52px;
+
+    color: #d4af37;
+
+    line-height: 2;
+
+    text-align: center;
+
+    direction: rtl;
+
+    margin: 50px auto;
+
+    max-width: 1000px;
+
+}
+
+.transliteration {
+
+    font-style: italic;
+
+    font-size: 22px;
+
+    color: #dddddd;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+
+}
+
+.meaning {
+
+    font-size: 24px;
+
+    line-height: 1.8;
+
+    color: white;
+
+    max-width: 700px;
+
+    margin: auto;
+
+}
+
+.ameen {
+
+    margin-top: 50px;
+
+    font-size: 32px;
+
+    color: #d4af37;
+
+}
+
+.translation-title {
+
+    margin-top: 35px;
+
+    margin-bottom: 15px;
+
+    color: #d4af37;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+}
+
+.tamil-meaning {
+
+    font-family: 'Noto Sans Tamil', sans-serif;
+
+    font-size: 22px;
+
+    line-height: 2;
+
+    color: #f5f5f5;
+
+    max-width: 700px;
+
+    margin: 40px auto 45px;
+
+}
+
+.meaning {
+
+    font-size: 21px;
+
+    line-height: 1.9;
+
+    color: #dddddd;
+
+    font-style: italic;
+
+    max-width: 700px;
+
+    margin: 35px auto;
+
+}
+
+/* =============================
+        Quran Section
+============================= */
+
+.quran-section {
+
+    margin-top: 90px;
+
+    padding-top: 60px;
+
+    border-top: 1px solid rgba(212, 175, 55, .25);
+
+}
+
+.quran-title {
+
+    font-family: 'Cinzel', serif;
+
+    color: #d4af37;
+
+    font-size: 34px;
+
+    text-align: center;
+
+    margin-bottom: 12px;
+
+}
+
+.quran-reference {
+
+    text-align: center;
+
+    color: #bfbfbf;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 45px;
+
+}
+
+.quran-arabic {
+
+    font-size: 36px;
+
+    line-height: 2;
+
+    color: #f3d36c;
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+}
+
+.closing-message {
+
+    margin-top: 80px;
+
+    text-align: center;
+
+    color: #d8d8d8;
+
+    line-height: 2;
+
+}
+
+.closing-tamil {
+
+    margin-top: 20px;
+
+    font-family: 'Noto Sans Tamil', sans-serif;
+
+    color: #f3f3f3;
+
+}
+
+.couple-name {
+
+    font-family: 'Allura', cursive;
+
+    font-size: 88px;
+
+    color: #e4c15b;
+
+    font-weight: 400;
+
+    line-height: 1.25;
+
+    letter-spacing: 2px;
+
+    text-shadow: 0 0 8px rgba(212, 175, 55, .35);
+
+}
+
+.hero-tagline {
+
+    color: #d6d6d6;
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-top: 15px;
+
+    margin-bottom: 12px;
+
+}
+
+.hero-invite {
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    margin-bottom: 40px;
+
+    line-height: 1.8;
+
+}
+
+.hero-invite span {
+
+    color: #d4af37;
+
+    font-family: 'Cinzel', serif;
+
+    font-size: 30px;
+
+    display: block;
+
+    margin-top: 8px;
+
+}
+
+.name-container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 35px;
+
+}
+
+.couple-name {
+
+    font-family: 'Allura', cursive;
+
+    font-size: 96px;
+
+    font-weight: 400;
+
+    color: #d4af37;
+
+    line-height: 1;
+
+    letter-spacing: 2px;
+
+    text-shadow: 0 0 8px rgba(212, 175, 55, .25),
+    0 0 20px rgba(212, 175, 55, .15);
+
+}
+
+.heart {
+
+    font-size: 42px;
+
+    color: #d4af37;
+
+    animation: pulse 2s infinite;
+
+}
+
+.description {
+
+    max-width: 720px;
+
+    margin: 35px auto;
+
+    line-height: 1.9;
+
+    font-size: 20px;
+
+    color: #ececec;
 
 }
