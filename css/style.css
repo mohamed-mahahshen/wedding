@@ -140,7 +140,9 @@ nav a:hover {
 
     color: #d4af37;
 
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+
+    padding-top: 20px;
 
 }
 
@@ -445,6 +447,7 @@ button:hover {
     width: 100%;
     max-width: 450px;
     gap: 100px;
+    align-items: center;
 }
 
 .person h3 {
